@@ -1,12 +1,12 @@
-2e21cf0321f76c818626583376abfd0a *DESCRIPTION
+8312c7278bcb1f45b64ab88588bc8bb0 *DESCRIPTION
 a313334557f4112381230b7821770e1b *LICENSE
 17a6fc8bb095b3a4bc0c1c32b718f088 *NAMESPACE
-74c29450beaabf5cf475814748a3741d *NEWS.md
+4438dc3132603c61585520b6cf113f3f *NEWS.md
 ebadc7f5fa0cf78371e030ae83bcae4f *R/server.R
 ad2eb324b174fb42df237b173a8f9897 *R/studio.R
 19d13f77997ff15c0a947e6c2402f0cc *R/ui.R
-52251d41869fd93ea7495e1463b30c02 *R/util.R
-f3c015702aa61f5dae708fa069be9cd1 *README.md
+fc92912130c85708ea41c41193624d05 *R/util.R
+9acd64a097b5a4815782c0c6022bac51 *README.md
 6293d60386311348af579f589806ed8e *inst/CITATION
 0db8b65bc16e84f6cd4344008e7efab1 *inst/css/sdstudio.css
 e652d96c8bb56a8b49f179c766215b0b *inst/js/sdstudio.js
@@ -14,4 +14,4 @@ e652d96c8bb56a8b49f179c766215b0b *inst/js/sdstudio.js
 8d860fc9a7717932b0e7a70a5db1e29b *man/figures/logo_old.png
 1ecb8bac2a1eae24bb43dcf78bb241f3 *man/launch.Rd
 5bb3fcf7eb0e0ba91923a3fb864bd799 *tests/testthat.R
-3df7e52b098cb00cb9aabb50f73046af *tests/testthat/test-util.R
+0e9cecdb21e4740e1d39e1184c204698 *tests/testthat/test-util.R

@@ -3,26 +3,57 @@
 
 ## sdstudio
 
-**sdstudio** is a companion package for building, previewing, and
-managing surveys built using the [surveydown](https://surveydown.org/)
-survey platform through a Graphical User Interface (GUI). The studio
-runs as a local Shiny web app and makes it easier to create, preview,
-and manage surveys without extensive programming knowledge.
+<!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/sdstudio)](https://cran.r-project.org/package=sdstudio)
+[![metacran
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/sdstudio)](https://cran.r-project.org/package=sdstudio)
+[![GitHub
+stars](https://img.shields.io/github/stars/surveydown-dev/sdstudio?style=social)](https://github.com/surveydown-dev/sdstudio)
+<!-- badges: end -->
+
+`sdstudio` is a companion package for building, previewing, and managing
+surveys built using the [surveydown](https://surveydown.org/) survey
+platform through a Graphical User Interface (GUI). The studio runs as a
+local Shiny web app and makes it easier to create, preview, and manage
+surveys without extensive programming knowledge.
+
+## Intro Video
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=p00ivfg1B1M">
+<img src="https://img.youtube.com/vi/p00ivfg1B1M/maxresdefault.jpg" alt="Watch the sdstudio intro video" width="500"/>
+</a>
+
+</div>
 
 ## Installation
 
-The **sdstudio** package is not yet on CRAN, but the development version
-can be installed from GitHub:
+Installing `sdstudio`:
 
 ``` r
-# install.packages("pak")
+# Option 1: install from CRAN
+install.packages("sdstudio")
+
+# Option 2: install from GitHub
 pak::pak("surveydown-dev/sdstudio", ask = FALSE)
 ```
 
-## Launch the Studio
+Make sure to install `surveydown` as well:
 
-The **surveydown studio** is the main application in **sdstudio**.
-Launch it with:
+``` r
+# Option 1: install from CRAN
+install.packages("surveydown")
+
+# Option 2: install from GitHub
+pak::pak("surveydown-dev/surveydown", ask = FALSE)
+```
+
+## Launch
+
+Simply call the `launch()` function to start the studio:
 
 ``` r
 sdstudio::launch()
@@ -33,7 +64,7 @@ sdstudio::launch()
 ### 🏗️ **Build Tab** - Visual Survey Creation
 
 - **Drag-and-drop interface** for intuitive survey construction
-- **14 survey templates** covering basic to advanced use cases
+- **16 survey templates** covering basic to advanced use cases
 - **Dual-pane editor** with visual builder and code editor
 - **Real-time synchronization** between visual interface and underlying
   code
@@ -55,6 +86,16 @@ sdstudio::launch()
 - **GSSAPI encryption support** with automatic fallback options
 - **CSV export functionality** for data analysis
 
+## Templates
+
+We currently have 16 templates to choose from. The ***default***
+template contains a minimum basic structure for a clean start. You might
+also try the ***question_type*** template for a showcase of all question
+types, or try some advanced features with ***conditional_display***,
+***conditional_navigation***, etc. For a full list of templates, go to
+the [surveydown-dev GitHub site](https://github.com/surveydown-dev) and
+search for any repo starting with “template\_”.
+
 ## Database Configuration
 
 The studio supports flexible database connection modes:
@@ -69,6 +110,3 @@ launch(gssencmode = "prefer")
 # Disable mode - forces plain connection (useful for VPN environments)
 launch(gssencmode = "disable")
 ```
-
-Configure your database connection using environment variables or the
-built-in Settings interface within the studio.
