@@ -1,6 +1,6 @@
 Package: sdstudio
 Title: Companion Application for the 'surveydown' Survey Platform
-Version: 0.1.4
+Version: 0.2.0
 Authors@R: c(
     person("Pingfan", "Hu", , "pingfan0727@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0009-0001-4877-4844")),
@@ -27,6 +27,6 @@ Suggests: testthat
 Encoding: UTF-8
 RoxygenNote: 7.3.3
 NeedsCompilation: no
-Packaged: 2025-12-03 16:33:49 UTC; pingfan
+Packaged: 2026-02-02 21:45:44 UTC; pingfan
 Repository: CRAN
-Date/Publication: 2025-12-03 17:20:02 UTC
+Date/Publication: 2026-02-02 22:00:02 UTC
